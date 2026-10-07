@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contra Coffee | Fine Brews, Blends & Bakes | Lahore</title>
+    <meta name="description" content="Discover specialty coffee, all-day breakfast, dinner, fresh bakes and premium coffee experiences at Contra Coffee, Gulberg 2, Lahore.">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Contra Coffee | Fine Brews, Blends & Bakes | Lahore">
+    <meta property="og:description" content="Specialty coffee, all-day dining and small-batch bakes in Gulberg 2, Lahore.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://contracoffee.pk/">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Structured Data Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "Contra Coffee",
+      "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ahmed Road, 2A Sir Syed Road, Block P, Gulberg 2",
+        "addressLocality": "Lahore",
+        "addressCountry": "PK"
+      },
+      "telephone": "+9242111266872",
+      "priceRange": "Rs 500 - Rs 3000",
+      "url": "https://contracoffee.pk/"
+    }
+    </script>
+
+    <!-- ALL CSS EMBEDDED HERE -->
+    <style>
+        :root {
+            /* Color Palette */
+            --color-espresso: #1A1310;
+            --color-dark-brown: #2C221E;
+            --color-warm-beige: #D8C3A5;
+            --color-cream: #FAF7F2;
+            --color-offwhite: #FFFFFF;
+            --color-charcoal: #231F20;
+            --color-muted: #7A726D;
+            --color-gold: #C5A059;
+            --color-border: #E8E2D9;
+
+            /* Fonts */
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+            /* Transitions */
+            --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Reset & Base Styles */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--color-offwhite);
+            color: var(--color-charcoal);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition-smooth);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--color-espresso);
+        }
+
+        .section-eyebrow {
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--color-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Layout Helpers */
+        .container {
+            width: 90%;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .section {
+            padding: 6rem 0;
+        }
+
+        .bg-cream {
+            background-color: var(--color-cream);
+        }
+
+        .grid {
+            display: grid;
+            gap: 2.5rem;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            border: 1px solid transparent;
+        }
+
+        .btn-primary {
+            background-color: var(--color-espresso);
+            color: var(--color-offwhite);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-gold);
+            color: var(--color-espresso);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--color-offwhite);
+            border-color: var(--color-offwhite);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--color-offwhite);
+            color: var(--color-espresso);
+        }
+
+        .btn-outline.dark {
+            color: var(--color-espresso);
+            border-color: var(--color-espresso);
+        }
+
+        .btn-outline.dark:hover {
+            background-color: var(--color-espresso);
+            color: var(--color-offwhite);
+        }
+
+        .full-width {
+            width: 100%;
+        }
+
+        /* NAVBAR */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1.5rem 0;
+            transition: var(--transition-smooth);
+        }
+
+        .header.scrolled {
+            background-color: rgba(26, 19, 16, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            display: flex;
+            flex-direction: column;
+            color: var(--color-offwhite);
+        }
+
+        .logo-text {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            letter-spacing: 4px;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .logo-sub {
+            font-size: 0.6rem;
+            letter-spacing: 5px;
+            color: var(--color-gold);
+        }
+
+        .nav-list {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: var(--color-offwhite);
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            opacity: 1;
+            color: var(--color-gold);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .nav-toggle, .nav-close {
+            display: none;
+            cursor: pointer;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-offwhite);
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            z-index: -2;
+            transition: transform 0.1s linear;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(26,19,16,0.6) 0%, rgba(26,19,16,0.85) 100%);
+            z-index: -1;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 850px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 0.5rem 1.2rem;
+            background: rgba(197, 160, 89, 0.2);
+            border: 1px solid var(--color-gold);
+            color: var(--color-gold);
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 7vw, 5.5rem);
+            color: var(--color-offwhite);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-title em {
+            font-style: italic;
+            font-weight: 400;
+            color: var(--color-warm-beige);
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            max-width: 650px;
+            margin: 0 auto 2.5rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero-location-tag {
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            opacity: 0.7;
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .mouse {
+            width: 26px;
+            height: 42px;
+            border: 2px solid var(--color-offwhite);
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .wheel {
+            width: 4px;
+            height: 8px;
+            background: var(--color-gold);
+            border-radius: 2px;
+            position: absolute;
+            top: 6px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: scroll 1.5s infinite;
+        }
+
+        @keyframes scroll {
+            0% { opacity: 1; top: 6px; }
+            100% { opacity: 0; top: 24px; }
+        }
+
+        /* ABOUT SECTION */
+        .about-grid {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+
+        .about-image-wrapper {
+            position: relative;
+        }
+
+        .about-img {
+            border-radius: 4px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .about-badge {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background-color: var(--color-espresso);
+            color: var(--color-offwhite);
+            padding: 1.5rem;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            border: 1px solid var(--color-gold);
+        }
+
+        .badge-num {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            color: var(--color-gold);
+        }
+
+        .badge-text {
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+        }
+
+        .about-text {
+            margin-bottom: 1.2rem;
+            color: var(--color-muted);
+        }
+
+        .about-quote {
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            font-style: italic;
+            color: var(--color-espresso);
+            border-left: 3px solid var(--color-gold);
+            padding-left: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        /* SPECIALTY COFFEE */
+        .specialty-grid {
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            margin-top: 3rem;
+        }
+
+        .specialty-card {
+            background: var(--color-offwhite);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: var(--transition-smooth);
+        }
+
+        .specialty-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+        }
+
+        .card-image {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-smooth);
+        }
+
+        .specialty-card:hover .card-image img {
+            transform: scale(1.08);
+        }
+
+        .card-price {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--color-espresso);
+            color: var(--color-gold);
+            padding: 0.4rem 0.8rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 2px;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-cat {
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            color: var(--color-gold);
+            font-weight: 700;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin: 0.3rem 0 0.8rem;
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            color: var(--color-muted);
+        }
+
+        /* MENU SECTION */
+        .menu-controls {
+            margin: 2.5rem 0 3rem;
+        }
+
+        .menu-search-wrapper {
+            max-width: 500px;
+            margin: 0 auto 2rem;
+            position: relative;
+        }
+
+        #menu-search {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: 1px solid var(--color-border);
+            border-radius: 30px;
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            outline: none;
+            transition: var(--transition-smooth);
+        }
+
+        #menu-search:focus {
+            border-color: var(--color-gold);
+            box-shadow: 0 0 10px rgba(197, 160, 89, 0.2);
+        }
+
+        .menu-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            justify-content: center;
+        }
+
+        .filter-btn {
+            background: transparent;
+            border: 1px solid var(--color-border);
+            padding: 0.6rem 1.4rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            border-radius: 20px;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--color-espresso);
+            color: var(--color-gold);
+            border-color: var(--color-espresso);
+        }
+
+        .menu-grid {
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        }
+
+        .menu-item-card {
+            background: var(--color-offwhite);
+            border: 1px solid var(--color-border);
+            padding: 1.5rem;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: var(--transition-smooth);
+        }
+
+        .menu-item-card:hover {
+            border-color: var(--color-gold);
+        }
+
+        .menu-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-item-name {
+            font-size: 1.3rem;
+        }
+
+        .menu-item-price {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--color-gold);
+        }
+
+        .menu-item-desc {
+            font-size: 0.88rem;
+            color: var(--color-muted);
+        }
+
+        /* SPOTLIGHT SECTIONS */
+        .spotlight-grid {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+
+        .spotlight-grid.reverse .spotlight-content {
+            order: 2;
+        }
+
+        .spotlight-grid.reverse .spotlight-image {
+            order: 1;
+        }
+
+        .spotlight-image img {
+            border-radius: 4px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .featured-list {
+            margin-top: 2rem;
+        }
+
+        .featured-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .featured-item h4 {
+            font-size: 1.2rem;
+        }
+
+        .featured-item p {
+            font-size: 0.85rem;
+            color: var(--color-muted);
+        }
+
+        .featured-item .price {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--color-gold);
+            white-space: nowrap;
+            margin-left: 1rem;
+        }
+
+        /* EXPERIENCE SECTION */
+        .experience-grid {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            margin-top: 3rem;
+        }
+
+        .exp-card {
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .exp-img {
+            height: 240px;
+        }
+
+        .exp-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .exp-body {
+            padding: 1.5rem;
+        }
+
+        .exp-body span {
+            font-size: 0.75rem;
+            color: var(--color-gold);
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .exp-body h3 {
+            font-size: 1.4rem;
+            margin: 0.4rem 0;
+        }
+
+        .exp-body p {
+            font-size: 0.9rem;
+            color: var(--color-muted);
+        }
+
+        /* GALLERY & LIGHTBOX */
+        .gallery-masonry {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            height: 280px;
+            overflow: hidden;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-smooth);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(26, 19, 16, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-offwhite);
+            opacity: 0;
+            transition: var(--transition-smooth);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            max-width: 80%;
+            max-height: 80%;
+            text-align: center;
+        }
+
+        .lightbox-content img {
+            max-height: 70vh;
+            margin: 0 auto;
+            border-radius: 4px;
+        }
+
+        #lightbox-caption {
+            color: var(--color-offwhite);
+            margin-top: 1rem;
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+        }
+
+        .lightbox-close, .lightbox-btn {
+            position: absolute;
+            background: transparent;
+            border: none;
+            color: var(--color-offwhite);
+            font-size: 2.5rem;
+            cursor: pointer;
+            padding: 1rem;
+        }
+
+        .lightbox-close { top: 20px; right: 30px; }
+        .lightbox-prev { left: 20px; }
+        .lightbox-next { right: 20px; }
+
+        /* REVIEWS */
+        .review-stats {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0.5rem;
+        }
+
+        .rating-num {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            color: var(--color-gold);
+            font-weight: 700;
+        }
+
+        .rating-count {
+            color: var(--color-muted);
+            font-size: 0.9rem;
+        }
+
+        .reviews-grid {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            margin-top: 3rem;
+        }
+
+        .review-card {
+            background: var(--color-offwhite);
+            padding: 2rem;
+            border-radius: 4px;
+            border: 1px solid var(--color-border);
+        }
+
+        .stars {
+            color: var(--color-gold);
+            margin-bottom: 1rem;
+        }
+
+        .review-text {
+            font-style: italic;
+            color: var(--color-dark-brown);
+            margin-bottom: 1.5rem;
+        }
+
+        .reviewer strong {
+            display: block;
+            font-size: 0.95rem;
+        }
+
+        .reviewer span {
+            font-size: 0.8rem;
+            color: var(--color-muted);
+        }
+
+        /* EVENTS */
+        .events-box {
+            background: var(--color-espresso);
+            color: var(--color-offwhite);
+            border-radius: 4px;
+            overflow: hidden;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+
+        .events-text {
+            padding: 4rem;
+        }
+
+        .events-text .section-title {
+            color: var(--color-offwhite);
+        }
+
+        .events-list {
+            margin: 1.5rem 0 2rem;
+        }
+
+        .events-list li {
+            margin-bottom: 0.6rem;
+            color: var(--color-warm-beige);
+        }
+
+        .events-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* LOCATION & FORM */
+        .location-grid {
+            grid-template-columns: 1fr 1fr;
+            margin-top: 3rem;
+        }
+
+        .location-card {
+            background: var(--color-cream);
+            padding: 3rem;
+            border-radius: 4px;
+        }
+
+        .loc-title {
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .loc-address {
+            color: var(--color-muted);
+            margin-bottom: 2rem;
+        }
+
+        .loc-details {
+            margin-bottom: 2rem;
+        }
+
+        .loc-item {
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .loc-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-form-wrapper {
+            background: var(--color-offwhite);
+            padding: 3rem;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+        }
+
+        .form-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--color-border);
+            border-radius: 2px;
+            font-family: var(--font-sans);
+            outline: none;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: var(--color-gold);
+        }
+
+        .form-status {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: var(--color-espresso);
+            color: var(--color-offwhite);
+            padding: 5rem 0 2rem;
+            border-top: 1px solid rgba(197, 160, 89, 0.2);
+        }
+
+        .footer-top {
+            grid-template-columns: 2fr 1fr 1.5fr;
+            margin-bottom: 4rem;
+        }
+
+        .footer-tagline {
+            color: var(--color-gold);
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            margin: 0.8rem 0;
+        }
+
+        .footer-desc {
+            color: var(--color-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-heading {
+            color: var(--color-offwhite);
+            font-size: 1.1rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 0.6rem;
+        }
+
+        .footer-links a {
+            color: var(--color-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--color-gold);
+        }
+
+        .footer-contact p {
+            color: var(--color-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--color-muted);
+        }
+
+        /* BACK TO TOP */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--color-gold);
+            color: var(--color-espresso);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            z-index: 999;
+            transition: var(--transition-smooth);
+        }
+
+        .back-to-top.show {
+            display: flex;
+        }
+
+        /* REVEAL ANIMATIONS */
+        .reveal-up, .reveal-left, .reveal-right {
+            opacity: 0;
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal-up { transform: translateY(40px); }
+        .reveal-left { transform: translateX(-40px); }
+        .reveal-right { transform: translateX(40px); }
+
+        .reveal-up.active, .reveal-left.active, .reveal-right.active {
+            opacity: 1;
+            transform: translate(0);
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 992px) {
+            .about-grid, .spotlight-grid, .events-box, .location-grid, .footer-top {
+                grid-template-columns: 1fr;
+            }
+
+            .spotlight-grid.reverse .spotlight-content,
+            .spotlight-grid.reverse .spotlight-image {
+                order: initial;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 400px;
+                height: 100vh;
+                background: var(--color-espresso);
+                padding: 6rem 3rem;
+                transition: var(--transition-smooth);
+                box-shadow: -5px 0 25px rgba(0,0,0,0.5);
+            }
+
+            .nav-menu.active { right: 0; }
+            .nav-list { flex-direction: column; gap: 1.8rem; }
+            .nav-toggle, .nav-close { display: block; color: var(--color-offwhite); font-size: 1.5rem; }
+            .nav-close { position: absolute; top: 2rem; right: 2rem; }
+            
+            .nav-toggle span {
+                display: block;
+                width: 25px;
+                height: 2px;
+                background: var(--color-offwhite);
+                margin: 5px 0;
+            }
+
+            .events-text { padding: 2.5rem; }
+        }
+
+        @media (max-width: 576px) {
+            .hero-buttons { flex-direction: column; }
+            .nav-btn { display: none; }
+            .about-badge { position: relative; bottom: 0; right: 0; margin-top: 1rem; }
+            .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">CONTRA</span>
+                <span class="logo-sub">COFFEE</span>
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Our Story</a></li>
+                    <li class="nav-item"><a href="#specialty" class="nav-link">Specialty Coffee</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
+                    <li class="nav-item"><a href="#location" class="nav-link">Location</a></li>
+                </ul>
+                <div class="nav-close" id="nav-close">&times;</div>
+            </div>
+
+            <div class="nav-actions">
+                <a href="#location" class="btn btn-primary nav-btn">ORDER NOW</a>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-bg" id="hero-parallax"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <div class="hero-badge">SPECIALTY COFFEE • LAHORE</div>
+            <h1 class="hero-title">Fine Brews.<br><em>Blends & Bakes.</em></h1>
+            <p class="hero-description">Specialty coffee, all-day dining and small-batch bakes — served in a space made for lingering.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">EXPLORE MENU</a>
+                <a href="#location" class="btn btn-outline">VISIT CONTRA</a>
+            </div>
+            <div class="hero-location-tag">GULBERG 2 • LAHORE</div>
+        </div>
+        <a href="#about" class="scroll-down" aria-label="Scroll to About Section">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </a>
+    </section>
+
+    <!-- BRAND STORY / ABOUT -->
+    <section class="section about" id="about">
+        <div class="container grid about-grid">
+            <div class="about-image-wrapper reveal-left">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80" alt="Contra Coffee Ambience" class="about-img main-img" loading="lazy">
+                <div class="about-badge">
+                    <span class="badge-num">4.3★</span>
+                    <span class="badge-text">1,200+ Google Reviews</span>
+                </div>
+            </div>
+            <div class="about-content reveal-right">
+                <div class="section-eyebrow">THE CONTRA EXPERIENCE</div>
+                <h2 class="section-title">Your Second Home.</h2>
+                <p class="about-text">Contra Coffee was built on a singular belief: that exceptional specialty coffee belongs alongside thoughtful food and intentional architecture. Located in the heart of Gulberg 2, Lahore, Contra is a sanctuary designed for morning rituals, deep conversations, quiet productivity, and evening catch-ups.</p>
+                <p class="about-text">From precision-poured espresso to handcrafted sourdough sandwiches and small-batch bakes, everything we serve is prepared with craft, care, and attention to detail.</p>
+                <blockquote class="about-quote">"Fine brews, blends & bakes — crafted for people who appreciate the finer details."</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIALTY COFFEE SECTION -->
+    <section class="section specialty" id="specialty">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <div class="section-eyebrow">ARTISANAL BREWS</div>
+                <h2 class="section-title">Coffee, Your Way.</h2>
+                <p class="section-subtitle">Sourced from top global origins, roasted with precision, and extracted by master baristas.</p>
+            </div>
+
+            <div class="specialty-grid grid">
+                <div class="specialty-card reveal-up">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" alt="The Contra Special" loading="lazy">
+                        <span class="card-price">Rs 925</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">SIGNATURE HOT</span>
+                        <h3 class="card-title">The Contra Special</h3>
+                        <p class="card-desc">Our proprietary house blend espresso layered with textured micro-foam and subtle natural sweet notes.</p>
+                    </div>
+                </div>
+
+                <div class="specialty-card reveal-up">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80" alt="Latte On The Rocks" loading="lazy">
+                        <span class="card-price">Rs 775</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">COLD COFFEE</span>
+                        <h3 class="card-title">Latte On The Rocks</h3>
+                        <p class="card-desc">Double shot espresso poured over slow-melting clear ice spheres with chilled velvet milk.</p>
+                    </div>
+                </div>
+
+                <div class="specialty-card reveal-up">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Hario Drip Filter" loading="lazy">
+                        <span class="card-price">Rs 825</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">FILTER BREW</span>
+                        <h3 class="card-title">Hario V60 Drip Filter</h3>
+                        <p class="card-desc">Single-origin pour-over highlighting delicate floral, citrus, and berry tasting notes.</p>
+                    </div>
+                </div>
+
+                <div class="specialty-card reveal-up">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80" alt="Contra Special Frappe" loading="lazy">
+                        <span class="card-price">Market Price</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">FRAPPE</span>
+                        <h3 class="card-title">Contra Special Frappe</h3>
+                        <p class="card-desc">Blended specialty coffee, dark chocolate drizzle, whipped cream, and cocoa nibs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE MENU SECTION -->
+    <section class="section menu" id="menu">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <div class="section-eyebrow">CURATED SELECTION</div>
+                <h2 class="section-title">The Complete Menu</h2>
+                <p class="section-subtitle">Explore our full range of brews, all-day dining, artisan paninis, and fresh bakes.</p>
+            </div>
+
+            <!-- Search & Filter Controls -->
+            <div class="menu-controls reveal-up">
+                <div class="menu-search-wrapper">
+                    <input type="text" id="menu-search" placeholder="Search menu items (e.g. Latte, Alfredo, Cheesecake)...">
+                </div>
+
+                <div class="menu-categories" id="menu-categories">
+                    <button class="filter-btn active" data-category="all">ALL</button>
+                    <button class="filter-btn" data-category="coffee">HOT COFFEE</button>
+                    <button class="filter-btn" data-category="cold-coffee">COLD COFFEE</button>
+                    <button class="filter-btn" data-category="breakfast">BREAKFAST</button>
+                    <button class="filter-btn" data-category="dinner">DINNER</button>
+                    <button class="filter-btn" data-category="sandwiches">SANDWICHES</button>
+                    <button class="filter-btn" data-category="salads">SALADS</button>
+                    <button class="filter-btn" data-category="desserts">PATISSERIE</button>
+                    <button class="filter-btn" data-category="drinks">COLD DRINKS</button>
+                    <button class="filter-btn" data-category="platters">PLATTERS</button>
+                </div>
+            </div>
+
+            <!-- Dynamic Menu Grid -->
+            <div class="menu-grid grid" id="menu-grid">
+                <!-- Items populated via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ALL-DAY BREAKFAST SPOTLIGHT -->
+    <section class="section spotlight-section bg-cream">
+        <div class="container grid spotlight-grid">
+            <div class="spotlight-content reveal-left">
+                <div class="section-eyebrow">MORNING RITUALS</div>
+                <h2 class="section-title">Breakfast, All Day.</h2>
+                <p class="spotlight-text">Whether you wake up at 7 AM or craving eggs at 7 PM, our all-day breakfast menu serves comfort on sourdough, organic poached eggs, and fresh smoothie bowls.</p>
+                <div class="featured-list">
+                    <div class="featured-item">
+                        <div>
+                            <h4>The Contra Brunch</h4>
+                            <p>Eggs your way, turkey bacon, sausages, roasted tomatoes, mushrooms & artisanal sourdough.</p>
+                        </div>
+                        <span class="price">Rs 2,495</span>
+                    </div>
+                    <div class="featured-item">
+                        <div>
+                            <h4>Low Carb Protein Brunch</h4>
+                            <p>Grilled chicken breast, poached eggs, avocado slices, spinach & roasted seeds.</p>
+                        </div>
+                        <span class="price">Rs 1,895</span>
+                    </div>
+                    <div class="featured-item">
+                        <div>
+                            <h4>The Contra Omelette</h4>
+                            <p>Three-egg herb omelette with melted cheddar, bell peppers, and toasted brioche.</p>
+                        </div>
+                        <span class="price">Rs 1,625</span>
+                    </div>
+                </div>
+            </div>
+            <div class="spotlight-image reveal-right">
+                <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=1000&q=80" alt="Contra All Day Breakfast" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- DINNER SPOTLIGHT -->
+    <section class="section spotlight-section">
+        <div class="container grid spotlight-grid reverse">
+            <div class="spotlight-image reveal-left">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80" alt="Contra Dinner Dishes" loading="lazy">
+            </div>
+            <div class="spotlight-content reveal-right">
+                <div class="section-eyebrow">EVENING DINING</div>
+                <h2 class="section-title">Comfort After Dark.</h2>
+                <p class="spotlight-text">As daylight fades, Contra transforms into an intimate dining spot offering rich pasta, pan-seared steaks, and gourmet chicken specialties.</p>
+                <div class="featured-list">
+                    <div class="featured-item">
+                        <div>
+                            <h4>Chicken Parmigiana</h4>
+                            <p>Crispy herb-crusted chicken topped with marinara, melted mozzarella, served with buttered penne.</p>
+                        </div>
+                        <span class="price">Rs 2,295</span>
+                    </div>
+                    <div class="featured-item">
+                        <div>
+                            <h4>Sriracha Alfredo</h4>
+                            <p>Fettuccine tossed in spicy sriracha parmesan cream sauce with grilled chicken strips.</p>
+                        </div>
+                        <span class="price">Rs 1,595</span>
+                    </div>
+                    <div class="featured-item">
+                        <div>
+                            <h4>Jalapeno Grilled Chicken</h4>
+                            <p>Char-grilled chicken breast glazed with creamy jalapeno sauce & garlic mashed potatoes.</p>
+                        </div>
+                        <span class="price">Rs 1,695</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COFFEE SHOP EXPERIENCE -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <div class="section-eyebrow">THE AMBIENCE</div>
+                <h2 class="section-title">Stay A Little Longer.</h2>
+                <p class="section-subtitle">Designed to accommodate every pace of life throughout the day.</p>
+            </div>
+
+            <div class="experience-grid grid">
+                <div class="exp-card reveal-up">
+                    <div class="exp-img">
+                        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80" alt="Morning Coffee" loading="lazy">
+                    </div>
+                    <div class="exp-body">
+                        <span>01 / MORNING</span>
+                        <h3>Coffee & Early Bakes</h3>
+                        <p>Quiet morning light, fresh aroma of espresso, and warm buttery croissants straight from our ovens.</p>
+                    </div>
+                </div>
+
+                <div class="exp-card reveal-up">
+                    <div class="exp-img">
+                        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&q=80" alt="Afternoon Work" loading="lazy">
+                    </div>
+                    <div class="exp-body">
+                        <span>02 / AFTERNOON</span>
+                        <h3>Work & Conversations</h3>
+                        <p>High-speed connectivity, comfortable seating, and pour-over coffee to fuel creative workflows.</p>
+                    </div>
+                </div>
+
+                <div class="exp-card reveal-up">
+                    <div class="exp-img">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Evening Dinner" loading="lazy">
+                    </div>
+                    <div class="exp-body">
+                        <span>03 / EVENING</span>
+                        <h3>Dinner & Desserts</h3>
+                        <p>Warm ambient lighting, artisanal mains, and decadent desserts shared with good company.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION WITH LIGHTBOX -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <div class="section-eyebrow">VISUAL JOURNAL</div>
+                <h2 class="section-title">Captured Moments</h2>
+                <p class="section-subtitle">A glimpse inside Contra Coffee — brews, bakes, and moments.</p>
+            </div>
+
+            <div class="gallery-masonry reveal-up" id="gallery-container">
+                <!-- Gallery items populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+        <button class="lightbox-btn lightbox-prev" id="lightbox-prev" aria-label="Previous Image">&#10094;</button>
+        <div class="lightbox-content">
+            <img src="" id="lightbox-img" alt="Gallery Preview">
+            <p id="lightbox-caption"></p>
+        </div>
+        <button class="lightbox-btn lightbox-next" id="lightbox-next" aria-label="Next Image">&#10095;</button>
+    </div>
+
+    <!-- REVIEWS SECTION -->
+    <section class="section reviews bg-cream">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <div class="section-eyebrow">COMMUNITY FEEDBACK</div>
+                <h2 class="section-title">What Our Guests Say</h2>
+                <div class="review-stats">
+                    <span class="rating-num">4.3 ★</span>
+                    <span class="rating-count">Based on 1,200+ Google Reviews</span>
+                </div>
+            </div>
+
+            <div class="reviews-grid grid">
+                <div class="review-card reveal-up">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"The Contra Special is hands down the smoothest coffee in Gulberg. Beautiful modern space with phenomenal attention to detail."</p>
+                    <div class="reviewer">
+                        <strong>Ahmed R.</strong>
+                        <span>Verified Guest • Google Review</span>
+                    </div>
+                </div>
+
+                <div class="review-card reveal-up">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Their Chicken Parmigiana and Sriracha Alfredo are exceptional. Great place for both working during the day and dinner at night."</p>
+                    <div class="reviewer">
+                        <strong>Zainab M.</strong>
+                        <span>Verified Guest • Google Review</span>
+                    </div>
+                </div>
+
+                <div class="review-card reveal-up">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"The interior aesthetic is unmatched in Lahore. Specialty coffee brewed to perfection, and the staff is genuinely welcoming."</p>
+                    <div class="reviewer">
+                        <strong>Hamza K.</strong>
+                        <span>Verified Guest • Google Review</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORPORATE & EVENTS SECTION -->
+    <section class="section events" id="events">
+        <div class="container">
+            <div class="events-box grid reveal-up">
+                <div class="events-text">
+                    <div class="section-eyebrow">SPECIAL SERVICES</div>
+                    <h2 class="section-title">Corporate & Private Events</h2>
+                    <p>Host your private dinners, product launches, corporate coffee breaks, or team brunches at Contra. We offer customized catering, espresso bars, and dedicated event layouts.</p>
+                    <ul class="events-list">
+                        <li>&#10003; Mobile Specialty Espresso Bar Setup</li>
+                        <li>&#10003; Custom Pastry & Sandwich Platters</li>
+                        <li>&#10003; Private Hall Booking in Gulberg 2</li>
+                    </ul>
+                    <a href="#location" class="btn btn-primary">ENQUIRE FOR AN EVENT</a>
+                </div>
+                <div class="events-image">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" alt="Corporate Event at Contra" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION & CONTACT SECTION -->
+    <section class="section location" id="location">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <div class="section-eyebrow">VISIT US</div>
+                <h2 class="section-title">Find Your Contra.</h2>
+                <p class="section-subtitle">We are situated in Block P, Gulberg 2, Lahore.</p>
+            </div>
+
+            <div class="grid location-grid">
+                <div class="location-card reveal-left">
+                    <h3 class="loc-title">CONTRA — GULBERG 2</h3>
+                    <p class="loc-address">Ahmed Road, 2A Sir Syed Road, Block P, Gulberg 2, Lahore, Pakistan</p>
+                    
+                    <div class="loc-details">
+                        <div class="loc-item">
+                            <strong>Phone:</strong>
+                            <a href="tel:+9242111266872">042 111 266 872</a>
+                        </div>
+                        <div class="loc-item">
+                            <strong>Opening Hours:</strong>
+                            <span>8:00 AM – 1:00 AM Daily</span>
+                        </div>
+                        <div class="loc-item">
+                            <strong>Official Website:</strong>
+                            <a href="https://contracoffee.pk/" target="_blank" rel="noopener">contracoffee.pk</a>
+                        </div>
+                    </div>
+
+                    <div class="loc-buttons">
+                        <a href="tel:+9242111266872" class="btn btn-primary">CALL CONTRA</a>
+                        <a href="https://maps.google.com/?q=Contra+Coffee+Gulberg+2+Lahore" target="_blank" rel="noopener" class="btn btn-outline dark">GET DIRECTIONS</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper reveal-right">
+                    <h3 class="form-title">Reserve a Table / Contact</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder="Your Full Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder="Your Email Address">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" required placeholder="Your Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" required placeholder="Reservation details, event inquiry, or message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">SEND MESSAGE</button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top grid">
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo">
+                        <span class="logo-text">CONTRA</span>
+                        <span class="logo-sub">COFFEE</span>
+                    </a>
+                    <p class="footer-tagline">Fine Brews, Blends & Bakes.</p>
+                    <p class="footer-desc">Specialty coffee house and all-day restaurant in Gulberg 2, Lahore.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#specialty">Specialty Coffee</a></li>
+                        <li><a href="#menu">Complete Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#location">Visit Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Contact & Location</h4>
+                    <p>Ahmed Road, 2A Sir Syed Road, Block P, Gulberg 2, Lahore, Pakistan</p>
+                    <p><strong>Phone:</strong> 042 111 266 872</p>
+                    <p><strong>Hours:</strong> 8:00 AM – 1:00 AM</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Contra Coffee Lahore. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="https://contracoffee.pk/" target="_blank" rel="noopener">Official Web</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">&#8593;</button>
+
+    <!-- ALL JAVASCRIPT EMBEDDED HERE -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // 1. MENU DATA STORE
+            const menuItems = [
+                // Hot Coffee
+                { name: "The Contra Special", category: "coffee", price: "Rs 925", desc: "House blend espresso, textured micro-foam, delicate sweet notes." },
+                { name: "Latte", category: "coffee", price: "Rs 850", desc: "Rich double shot espresso with velvety steamed fresh milk." },
+                { name: "Cappuccino", category: "coffee", price: "Rs 850", desc: "Equal balance of espresso, steamed milk, and dense foam." },
+                { name: "Cortado", category: "coffee", price: "Rs 745", desc: "Espresso cut with an equal amount of warm textured milk." },
+                { name: "Macchiato", category: "coffee", price: "Rs 575", desc: "Espresso marked with a dollop of foamed milk." },
+                { name: "Swiss Choc Mocca", category: "coffee", price: "Market Price", desc: "Espresso blended with Swiss dark chocolate & steamed milk." },
+                { name: "Hazel Nocciolatte", category: "coffee", price: "Market Price", desc: "Hazelnut infused specialty espresso with micro-foam." },
+                { name: "Spanish Latte", category: "coffee", price: "Market Price", desc: "Espresso with condensed milk and steamed whole milk." },
+                { name: "Espresso", category: "coffee", price: "Rs 575", desc: "Concentrated extraction of our seasonal single-origin beans." },
+                { name: "Americano", category: "coffee", price: "Rs 625", desc: "Double shot espresso elongated with hot water." },
+                { name: "French Press", category: "coffee", price: "Rs 825", desc: "Full-bodied immersion brew highlighting rich chocolate notes." },
+                { name: "Hario Drip Filter", category: "coffee", price: "Rs 825", desc: "Precision V60 pour-over with clean floral and fruity profile." },
+
+                // Cold Coffee
+                { name: "Latte On The Rocks", category: "cold-coffee", price: "Rs 775", desc: "Double shot espresso poured over custom ice spheres & milk." },
+                { name: "Iced Americano", category: "cold-coffee", price: "Rs 625", desc: "Espresso poured over chilled water and ice." },
+                { name: "Iced Brew Coffee", category: "cold-coffee", price: "Rs 675", desc: "24-hour slow cold brew extraction served chilled." },
+                { name: "Contra Special Frappe", category: "cold-coffee", price: "Market Price", desc: "Blended coffee, cocoa drizzle, and whipped cream." },
+                { name: "Dulce De Leche Frappe", category: "cold-coffee", price: "Market Price", desc: "Blended coffee with rich caramel dulce de leche." },
+
+                // Breakfast
+                { name: "The Contra Brunch", category: "breakfast", price: "Rs 2,495", desc: "Eggs, turkey bacon, sausages, roasted veggies & sourdough." },
+                { name: "Low Carb Protein Brunch", category: "breakfast", price: "Rs 1,895", desc: "Grilled chicken, poached eggs, avocado & spinach." },
+                { name: "The Contra Omelette", category: "breakfast", price: "Rs 1,625", desc: "Three-egg herb omelette with cheddar & brioche." },
+                { name: "Scrambled Eggs On Sourdough", category: "breakfast", price: "Market Price", desc: "Creamy french-style scrambled eggs on toasted sourdough." },
+                { name: "Smoothie Bowl", category: "breakfast", price: "Rs 1,050", desc: "Blended berry acai base topped with granola & seed mix." },
+                { name: "Pancake Stack", category: "breakfast", price: "Market Price", desc: "Fluffy pancakes served with maple syrup & fresh berries." },
+
+                // Dinner
+                { name: "Chicken Parmigiana", category: "dinner", price: "Rs 2,295", desc: "Crispy chicken, marinara sauce, mozzarella & penne." },
+                { name: "Chicken & Mash with Smoky Gravy", category: "dinner", price: "Market Price", desc: "Pan-roasted chicken breast with smoked butter mash." },
+                { name: "Sriracha Alfredo", category: "dinner", price: "Rs 1,595", desc: "Spicy sriracha parmesan cream sauce with fettuccine." },
+                { name: "Jalapeno Grilled Chicken", category: "dinner", price: "Rs 1,695", desc: "Char-grilled chicken with spicy jalapeno cream." },
+                { name: "Penne Arrabbiata", category: "dinner", price: "Rs 1,595", desc: "Classic spicy tomato garlic sauce tossed with penne." },
+                { name: "Stuffed Crespelle", category: "dinner", price: "Market Price", desc: "Italian savory crepe stuffed with spinach and ricotta." },
+
+                // Sandwiches
+                { name: "Beef Brisket Croque Madame", category: "sandwiches", price: "Market Price", desc: "Slow-cooked brisket, Gruyère cheese & fried egg." },
+                { name: "Club Sandwich", category: "sandwiches", price: "Market Price", desc: "Triple-decker toasted brioche with chicken, bacon & egg." },
+                { name: "Cheese, Pesto & Tomato Panini", category: "sandwiches", price: "Market Price", desc: "Fresh mozzarella, basil pesto & sun-dried tomatoes." },
+                { name: "Tarragon Lime Panini", category: "sandwiches", price: "Market Price", desc: "Grilled chicken with tarragon lime aioli." },
+                { name: "Spicy Tandoori Panini", category: "sandwiches", price: "Market Price", desc: "Charcoal-grilled tandoori chicken with mint yogurt." },
+                { name: "Paprika Squared Panini", category: "sandwiches", price: "Market Price", desc: "Smoked paprika chicken with grilled peppers." },
+                { name: "Beef Onion & Green Chili Panini", category: "sandwiches", price: "Market Price", desc: "Seared beef strips, caramelized onions & chili." },
+
+                // Salads
+                { name: "Contra Special Caesar", category: "salads", price: "Rs 1,295", desc: "Crisp romaine, parmesan shavings, croutons & caesar dressing." },
+                { name: "Power Salad", category: "salads", price: "Rs 1,495", desc: "Quinoa, avocado, kale, pomegranate & lemon vinaigrette." },
+
+                // Desserts
+                { name: "Brownie Bowl", category: "desserts", price: "Market Price", desc: "Warm fudge brownie bowl with vanilla bean gelato." },
+                { name: "New York Cheesecake", category: "desserts", price: "Market Price", desc: "Classic dense cheesecake with berry compote." },
+                { name: "Macarons (Box of 3)", category: "desserts", price: "Market Price", desc: "Assorted French macarons." },
+                { name: "Triple Chocolate Cake", category: "desserts", price: "Market Price", desc: "Layered Belgian dark, milk, and white chocolate." },
+                { name: "Date & Walnut Cake", category: "desserts", price: "Market Price", desc: "Warm date sponge topped with butterscotch sauce." },
+
+                // Drinks
+                { name: "Kiwi, Mint & Lime Granita", category: "drinks", price: "Market Price", desc: "Crushed ice cooler with fresh kiwi and mint." },
+                { name: "Forest Berry & Pomegranate", category: "drinks", price: "Market Price", desc: "Refreshing dark berry sparkling cooler." },
+                { name: "Power Smoothie", category: "drinks", price: "Market Price", desc: "Banana, peanut butter, oat milk & chia seeds." },
+                { name: "Nocciola Thickshake", category: "drinks", price: "Market Price", desc: "Decadent hazelnut chocolate thickshake." },
+
+                // Platters
+                { name: "Americana Platter", category: "platters", price: "Market Price", desc: "Sliders, wings, mozzarella sticks & fries." },
+                { name: "Italiano Platter", category: "platters", price: "Market Price", desc: "Bruschetta, arancini balls, crostini & dip." },
+                { name: "Nachos Supreme Platter", category: "platters", price: "Market Price", desc: "Tortilla chips loaded with cheese, jalapenos & salsa." }
+            ];
+
+            // 2. RENDER MENU ITEMS
+            const menuGrid = document.getElementById('menu-grid');
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const searchInput = document.getElementById('menu-search');
+
+            function renderMenu(items) {
+                menuGrid.innerHTML = '';
+                if (items.length === 0) {
+                    menuGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--color-muted);">No menu items found.</p>';
+                    return;
+                }
+
+                items.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'menu-item-card reveal-up active';
+                    card.innerHTML = `
+                        <div>
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">${item.name}</h3>
+                                <span class="menu-item-price">${item.price}</span>
+                            </div>
+                            <p class="menu-item-desc">${item.desc}</p>
+                        </div>
+                    `;
+                    menuGrid.appendChild(card);
+                });
+            }
+
+            renderMenu(menuItems);
+
+            // Filter Category
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const cat = btn.dataset.category;
+
+                    if (cat === 'all') {
+                        renderMenu(menuItems);
+                    } else {
+                        const filtered = menuItems.filter(item => item.category === cat);
+                        renderMenu(filtered);
+                    }
+                });
+            });
+
+            // Search
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                const filtered = menuItems.filter(item => 
+                    item.name.toLowerCase().includes(query) || 
+                    item.desc.toLowerCase().includes(query)
+                );
+                renderMenu(filtered);
+            });
+
+            // 3. GALLERY DATA & LIGHTBOX
+            const galleryData = [
+                { src: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80", title: "Barista Extraction" },
+                { src: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80", title: "Contra Interior Space" },
+                { src: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80", title: "Artisanal Breakfast" },
+                { src: "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80", title: "Latte Art Pour" },
+                { src: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80", title: "Dinner Mains" },
+                { src: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80", title: "Freshly Baked Bakes" }
+            ];
+
+            const galleryContainer = document.getElementById('gallery-container');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+            let currentIndex = 0;
+
+            galleryData.forEach((item, index) => {
+                const el = document.createElement('div');
+                el.className = 'gallery-item';
+                el.innerHTML = `
+                    <img src="${item.src}" alt="${item.title}" loading="lazy">
+                    <div class="gallery-overlay"><span>${item.title}</span></div>
+                `;
+                el.addEventListener('click', () => openLightbox(index));
+                galleryContainer.appendChild(el);
+            });
+
+            function openLightbox(index) {
+                currentIndex = index;
+                lightboxImg.src = galleryData[currentIndex].src;
+                lightboxCaption.textContent = galleryData[currentIndex].title;
+                lightbox.classList.add('active');
+            }
+
+            document.getElementById('lightbox-close').addEventListener('click', () => lightbox.classList.remove('active'));
+            document.getElementById('lightbox-prev').addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + galleryData.length) % galleryData.length;
+                openLightbox(currentIndex);
+            });
+            document.getElementById('lightbox-next').addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % galleryData.length;
+                openLightbox(currentIndex);
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (!lightbox.classList.contains('active')) return;
+                if (e.key === 'Escape') lightbox.classList.remove('active');
+                if (e.key === 'ArrowLeft') document.getElementById('lightbox-prev').click();
+                if (e.key === 'ArrowRight') document.getElementById('lightbox-next').click();
+            });
+
+            // 4. NAVBAR STICKY & MOBILE
+            const header = document.getElementById('header');
+            const navMenu = document.getElementById('nav-menu');
+            const navToggle = document.getElementById('nav-toggle');
+            const navClose = document.getElementById('nav-close');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 80) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            if (navToggle) {
+                navToggle.addEventListener('click', () => navMenu.classList.add('active'));
+            }
+
+            if (navClose) {
+                navClose.addEventListener('click', () => navMenu.classList.remove('active'));
+            }
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => navMenu.classList.remove('active'));
+            });
+
+            // 5. SCROLL REVEAL OBSERVER
+            const reveals = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            reveals.forEach(r => observer.observe(r));
+
+            // 6. BACK TO TOP BUTTON
+            const backToTop = document.getElementById('back-to-top');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) {
+                    backToTop.classList.add('show');
+                } else {
+                    backToTop.classList.remove('show');
+                }
+            });
+
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // 7. FORM VALIDATION
+            const form = document.getElementById('contact-form');
+            const status = document.getElementById('form-status');
+
+            if (form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    status.style.color = 'var(--color-gold)';
+                    status.textContent = 'Thank you! Your inquiry has been received. We will contact you shortly.';
+                    form.reset();
+                });
+            }
+
+            // 8. HERO PARALLAX
+            const heroBg = document.getElementById('hero-parallax');
+            window.addEventListener('scroll', () => {
+                if (heroBg) {
+                    let offset = window.scrollY;
+                    heroBg.style.transform = `translateY(${offset * 0.4}px)`;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
